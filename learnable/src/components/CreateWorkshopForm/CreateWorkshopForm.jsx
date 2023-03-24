@@ -1,0 +1,105 @@
+import React, { useState }from 'react';
+import { useNavigate } from "react-router-dom";
+import "./CreateWorkshopForm.css";
+
+function NewWorkshopForm() {
+    const [ FormData, setFormData ] = useState({
+        title: '',
+        skills: '',
+        workshop_date: '',
+        description: '',
+        image: '',
+        is_open: true,
+        max_mentor_num: ''
+        
+    }); 
+    const navigate = useNavigate();
+
+        
+    const handleChange = (event) => {
+        const { id, value } = event.target;
+        setFormData((prevFormData) => ({
+            ...prevFormData,
+            [id]: value,
+        }));
+    };
+   
+    const handleSubmit = (event) => {
+        event.preventDefault();
+
+            postData().then((response) => {
+            console.log(response)
+            navigate(`/workshops/${response.id}`);
+            // back-tick is used when you need add with string with a value
+            });
+
+    };
+
+const postData = async () => {
+    const token = window.localStorage.getItem("token");
+    const response = await fetch(`${import.meta.env.VITE_API_URL}workshops/`, {
+        method: "post",
+        headers: {
+            "Content-Type": "application/json",
+            "Authorization": `token ${token}`,
+        },
+        body: JSON.stringify(FormData) 
+        // this is the line to pass in the state and then sent back to api
+    });
+    return response.json();
+    };
+
+
+    return (
+        <form>
+            <div className="new-workshop-1">
+                <div className="new-workshop-1b">
+                    <div className="new-workshop-2">
+                        <div className="new-workshop-3">
+                            <div className="new-workshop-3b">
+                                <h2>Create a Workshop</h2>
+                                <p>Please fill out the form below:</p>
+                            </div>
+                            <div className="new-workshop-4a">
+                                <label htmlFor='title'>Title:  </label>
+                                <input onChange={handleChange} type="text" id='title' placeholder='Name for Workshop'></input>
+                            </div>
+                             <div className="new-workshop-4a">
+                                <label htmlFor='skills'>Skills:</label>
+                                <input onChange={handleChange} type="checkbox" id='skills' placeholder='Choose skills'></input>
+                            </div>
+                            <div className="new-workshop-4a">
+                                <label htmlFor='workshop_date'>Workshop Date: </label>
+                                <input onChange={handleChange} type="text" id='workshop_date' placeholder='Workshop Date'></input>
+                            </div>
+                            <div className="new-workshop-4a">
+                                <label htmlFor='description'>Description:</label>
+                                <input onChange={handleChange} type="text" id='description' placeholder='Enter description'></input>
+                            </div>
+                            <div className="new-workshop-4a">
+                                <label htmlFor='image'>Workshop Photo:</label>
+                                <input onChange={handleChange} type="url" id='image' placeholder='Paste image url'></input>
+                            </div>
+
+                            <div className="new-workshop-4a">
+                                <label htmlFor='max_mentor_num'>Mentors needed:</label>
+                                <input onChange={handleChange} type="number" id='max_mentor_num' placeholder='Enter number'></input>
+                            </div>
+            
+            
+                            <div className="new-workshop-4g"><button type="submit" onClick={handleSubmit} className="btn-4">Submit</button></div>
+
+                        </div>
+                        
+
+                     </div>
+                </div>
+            </div>
+            
+            
+        </form>
+
+    )
+};
+
+export default NewWorkshopForm;
