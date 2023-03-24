@@ -2,8 +2,10 @@ import React, { Children } from "react";
 import {createBrowserRouter, RouterProvider, Outlet} from 'react-router-dom';
 import Nav from './components/Nav/Navbar';
 import HomePage from './pages/HomePage';
-import WorkshopPage from './pages/WorkshopPage';
+import WorkshopDetail from './pages/WorkshopDetailPage';
 import NewWorkshopPage from "./pages/NewWorkshop";
+import NewUserPage from "./pages/NewUserPage";
+import LoginPage from "./pages/LoginPage";
 
 
 const HeaderLayout = () => {
@@ -29,9 +31,18 @@ const router = createBrowserRouter([
         element: <NewWorkshopPage />
       },
       {
-        path: '/workshops',
-        element: <WorkshopPage />
+        path: '/workshop',
+        element: <WorkshopDetail />
       },
+      {
+        path: '/createanaccount',
+        element: <NewUserPage />
+      },
+      {
+        path: '/login',
+        element: <LoginPage />
+      },
+      
 
     ],
   },

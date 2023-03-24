@@ -6,50 +6,49 @@
     }
     
     
-    .new-workshop-3b{
+    .new-proj-3b{
         /* padding: 30px; */
         margin: 10px;
         justify-items: center;
         color: #1e1243;
         text-align: center;
-        margin-bottom: 0;
     }
     
-    .new-workshop-3b p{
+    .new-proj-3b p{
         color: #1e1243;
     }
     
     
     
-    .new-workshop-1{
+    .new-proj-1{
         margin-top: 50px;
         justify-content: center;
         align-items: center;
-        background-color: #b6a9d2;
+        background-color:  #b6a9d2;
         width: 100%;
-        /* height: 600px; */
-        padding: 10px;
+        height: 100%;
       
       }
       
-      .new-workshop-1b{
+      .new-proj-1b{
         display: flex;
         justify-content: center;
+        height: 520px;
       }
       
-      .new-workshop-2{
+      .new-proj-2{
         display: flex;
         align-items: center;
         justify-content: center;
         background-color: #fff;
         width: 700px;
-        height: 480px;
         margin: 30px;
         padding: 20px;
+ 
         
       }
     
-      .new-workshop-4a{
+      .new-proj-4a{
         display: flex;
         width: 420px;
         justify-content: right;
@@ -59,12 +58,12 @@
         
       }
     
-      .new-workshop-4a label{
+      .new-proj-4a label{
         padding-right: 20px;
         
       }
       
-      .new-workshop-4a input{
+      .new-proj-4a input{
         text-align: left;
         border: none;
         background-color: rgb(232, 239, 239);
@@ -74,37 +73,6 @@
     
       }
      
-      .new-workshop-4b{
-        display: flex;
-        width: 420px;
-        justify-content: left;
-        /* color: rgb(171, 222, 151); */
-        /* padding-right: 30px; */
-        margin: 5px;
-        
-      }
-    
-      .new-workshop-4b label{
-        justify-content: right;
-        
-      }
-      
-      .new-workshop-4b input{
-  
-        justify-content: left;
-        text-align: right;
-        border: none;
-        background-color: rgb(232, 239, 239);
-        padding: 20px;
-        width: 200px;
-        margin-left: 60px;
-    
-      }
-      
-      .language-selection{
-        padding: 0;
-        margin: 0;
-      }
     
       
       .btn-4{
@@ -120,7 +88,8 @@
     
       }
       
-      .new-workshop-4g{
+      .new-proj-4g{
     
         text-align: center;
       }
+    

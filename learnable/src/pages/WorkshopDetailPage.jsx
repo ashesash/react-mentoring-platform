@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from "react";
 import { useParams, Link } from "react-router-dom";
+import workshopPhoto from  "../assets/workshop1.jpg";
 
 
 
 
 
-function WorkshopPage(){
+function WorkshopDetail(){
     const [projectData, setProjectData] = useState ({ pledges: [] });
     const { id } = useParams();
 
@@ -26,23 +27,7 @@ function WorkshopPage(){
         <div>
             <div className="project-block">
             <div className="block1">
-                <div>
-                    <div>
-                        <div className="block1-one"></div>
-                    </div>
-                    <div>
-                        <div className="block1-two"><h2>{projectData.wedding_date}</h2></div>
-                    </div>
-                </div>
-
-                <div>
-                    <div>
-                        <div className="block1-three"><h2>{projectData.partner_name1} and {projectData.partner_name2}</h2></div>
-                    </div>
-                    <div>
-                        <div className="block1-four"></div>
-                    </div>
-                </div>
+            <img src={ workshopPhoto } alt="workshop-graphic" />
             </div>
             <div className="block2">
                 <div>
@@ -67,4 +52,4 @@ function WorkshopPage(){
     )
 };
 
-export default WorkshopPage;
+export default WorkshopDetail;

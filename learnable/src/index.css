@@ -4,6 +4,7 @@ body {
 
 * {
   box-sizing: border-box;
+  font-family: 'Helvetica', sans-serif;
 }
 
 .body{
@@ -22,8 +23,6 @@ body {
   padding: 0;
 
 
-  /* height: 450px; */
-  /* position: relative; */
 }
 
 .body-text{
@@ -41,4 +40,144 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.total{
+  color: #fff;
+  font-size: 21px;
+}
+
+
+/* workshop detail page */
+
+.project-block{
+  display: flex;
+  justify-content: center;
+}
+
+.block1{
+  margin: 0px;
+  display:flex;
+  position: relative;
+  justify-content: center;
+
+  width: 700px;
+  height: 500px;
+  padding: 20px;
+  margin-top: 40px;
+
+}
+
+.block1 img{
+  margin: 0;
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 98%;
+  border-radius: 15px;
+  margin-top: 4px;
+}
+
+
+.block2{
+  background-color: #1e1243;
+  margin: 0px;
+  display:flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 480px;
+  height: 600px;
+  padding: 20px;
+  margin-top: 63px;
+  border-radius: 15px;
+}
+
+.block2 h3{
+  color: rgb(34, 91, 41);
+  margin: 10px;
+}
+
+.block2 h6{
+  font-size: 15px;
+  margin: 0;
+  font-weight: 400;
+}
+
+.block2 p{
+  font-size: 10px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  color: rgb(100, 99, 99);
+}
+
+/* .profilepic img{
+  width: 150px;
+  height: 150px;
+  border-radius: 200px;
+} */
+
+
+
+.block2-btns{
+  display: flex;
+  justify-content: center;
+}
+
+.btn-3{
+  justify-content: center;
+  align-items: center;
+  width: 90px;
+  padding: 10px;
+  background-color: white;
+  border: none;
+  border-radius: 15px;
+  text-decoration: none;
+  color: rgb(34, 91, 41);
+  font-weight: 800;
+  margin: 5px;
+  font-size: 16px;
+  text-decoration: none;
+
+}
+
+.btn-3 a{
+  text-decoration: none;
+  color:rgb(34, 91, 41);
+}
+
+
+
+/* explore page */
+
+.projects-1{
+  margin-top: 50px;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(210, 209, 205);
+  width: 100%;
+  height: 100%;
+
+}
+
+.projects-1b{
+  display: flex;
+  justify-content: center;
+  height: 550px;
+  margin: 0;
+  border: 0;
+}
+
+.projects-2{
+  display: inline;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  width: 700px;
+  margin: 30px;
+  padding: 20px;
+  border-radius: 15px;
+  
+  
 }

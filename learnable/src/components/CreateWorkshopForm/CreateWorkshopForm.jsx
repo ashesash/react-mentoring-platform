@@ -64,9 +64,21 @@ const postData = async () => {
                                 <label htmlFor='title'>Title:  </label>
                                 <input onChange={handleChange} type="text" id='title' placeholder='Name for Workshop'></input>
                             </div>
-                             <div className="new-workshop-4a">
+                             <div className="new-workshop-4b">
                                 <label htmlFor='skills'>Skills:</label>
-                                <input onChange={handleChange} type="checkbox" id='skills' placeholder='Choose skills'></input>
+                                <div className='language-selection'>
+                                    <input onChange={handleChange} type="checkbox" id='options'></input>
+                                    <label for='Django'>Django</label>
+                                    <input onChange={handleChange} type="checkbox" id='options'></input>
+                                    <label for='Python'>Python</label>
+                                    <input onChange={handleChange} type="checkbox" id='options'></input>
+                                    <label for='React'>React</label>
+                                    <input onChange={handleChange} type="checkbox" id='options'></input>
+                                    <label for='Javascript'>Javascript</label>
+                                    <input onChange={handleChange} type="checkbox" id='options'></input>
+                                    <label for='HTML/CSS'>HTML/CSS</label>
+                                </div>
+                                
                             </div>
                             <div className="new-workshop-4a">
                                 <label htmlFor='workshop_date'>Workshop Date: </label>

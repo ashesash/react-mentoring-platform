@@ -3,7 +3,6 @@ import { Link, useNavigate } from 'react-router-dom';
 import "./Navbar.css";
 import navLogo from "../../assets/logo.png"
 // import ProjectCard from "../../components/ProjectCard";
-// import { FaHeart } from 'react-icons/fa';
 
 function Nav() {
     // const [ projectList, setProjectList ] = useState([]);
@@ -39,8 +38,8 @@ function Nav() {
     else {
         loginStuff = (<div>
         
-            <button className="btn-1"><Link to="/explore"><FaHeart className="heart-icon2" />See Wishin Wells</Link></button>
-            <button className="btn-2"><Link to="/project-form"><img src={ well } className="icon-well"/>Create a Wishin Well</Link></button>
+            <button className="btn-1"><Link to="/explore">See Wishin Wells</Link></button>
+            <button className="btn-2"><Link to="/workshop-form">Create a Workshop</Link></button>
             <button className="btn-7" onClick={onLogOut}> Logout</button>
         </div>)
     }
@@ -48,8 +47,6 @@ function Nav() {
         <nav className="navbar">
                     <Link to="/"><img src={ navLogo } className="logo" alt="logo" /></Link>
                     <div className="links">
-                    {/* <Link to="/explore">Explore</Link>
-                    <Link to="/reviews">Reviews</Link> */}
                     
                     { loginStuff }
                     
