@@ -5,7 +5,11 @@ import "./CreateWorkshopForm.css";
 function NewWorkshopForm() {
     const [ FormData, setFormData ] = useState({
         title: '',
-        skills: '',
+        is_python_mentor: false,
+        is_django_mentor: false,
+        is_react_mentor: false,
+        is_javascript_mentor: false,
+        is_htmlcss_mentor: false,
         workshop_date: '',
         description: '',
         image: '',
@@ -17,11 +21,25 @@ function NewWorkshopForm() {
 
         
     const handleChange = (event) => {
-        const { id, value } = event.target;
-        setFormData((prevFormData) => ({
-            ...prevFormData,
-            [id]: value,
-        }));
+        const { id, value, type, checked } = event.target;
+        console.log(id, value, type, checked);
+        if (type=="checkbox"){
+            setFormData((prevFormData) => ({
+                ...prevFormData,
+                [id]: checked,
+            }));
+
+        }
+        else {
+            setFormData((prevFormData) => ({
+                ...prevFormData,
+                [id]: value,
+            }));
+
+        }
+            
+            
+        
     };
    
     const handleSubmit = (event) => {
@@ -64,22 +82,18 @@ const postData = async () => {
                                 <label htmlFor='title'>Title:  </label>
                                 <input onChange={handleChange} type="text" id='title' placeholder='Name for Workshop'></input>
                             </div>
-                             <div className="new-workshop-4b">
-                                <label htmlFor='skills'>Skills:</label>
-                                <div className='language-selection'>
-                                    <input onChange={handleChange} type="checkbox" id='options'></input>
-                                    <label for='Django'>Django</label>
-                                    <input onChange={handleChange} type="checkbox" id='options'></input>
-                                    <label for='Python'>Python</label>
-                                    <input onChange={handleChange} type="checkbox" id='options'></input>
-                                    <label for='React'>React</label>
-                                    <input onChange={handleChange} type="checkbox" id='options'></input>
-                                    <label for='Javascript'>Javascript</label>
-                                    <input onChange={handleChange} type="checkbox" id='options'></input>
-                                    <label for='HTML/CSS'>HTML/CSS</label>
+                            
+                            <div className="new-workshop-4b">
+                                <label htmlFor='Skills'>Skills:  </label>
+                                <div className="checkboxes">
+                                    <label><input onChange={handleChange} type="checkbox" id='is_python_mentor'></input><span>Python</span></label>
+                                    <label><input onChange={handleChange} type="checkbox" id='is_django_mentor'></input><span>Django</span></label>
+                                    <label><input onChange={handleChange} type="checkbox" id='is_htmlcss_mentor'></input><span>HTML/CSS</span></label>
+                                    <label><input onChange={handleChange} type="checkbox" id='is_react_mentor'></input><span>React</span></label>
+                                    <label><input onChange={handleChange} type="checkbox" id='is_javascript_mentor'></input><span>Javascript</span></label>
                                 </div>
-                                
                             </div>
+
                             <div className="new-workshop-4a">
                                 <label htmlFor='workshop_date'>Workshop Date: </label>
                                 <input onChange={handleChange} type="text" id='workshop_date' placeholder='Workshop Date'></input>
