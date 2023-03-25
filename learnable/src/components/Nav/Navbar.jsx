@@ -5,17 +5,6 @@ import navLogo from "../../assets/logo.png"
 // import ProjectCard from "../../components/ProjectCard";
 
 function Nav() {
-    // const [ projectList, setProjectList ] = useState([]);
-    // useEffect(() => {
-    //     fetch(`${import.meta.env.VITE_API_URL}projects`)
-    //     .then((results) => {
-    //         return results.json();
-    //     })
-    //     .then((data) => {
-    //         setProjectList(data)
-    //     });
-        
-    // }, []);
 
     const ShowLoginButton = window.localStorage.getItem("token") === null;
 

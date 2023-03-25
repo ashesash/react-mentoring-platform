@@ -1,0 +1,49 @@
+
+
+  .all-workshops-1 a{
+    text-decoration: none;
+    color: rgb(34, 91, 41);
+    background-color: #000;
+   
+  }
+
+  .all-workshops-1a{
+    display: flex;
+    border-bottom: 2px solid #000;
+    margin: 0;
+    padding: 0;
+    
+
+  }
+
+  .all-workshops-1b{
+    display: inline-flexbox;
+    /* align-items: center; */
+    width: 300px;
+    height: 100px;
+    padding: 0;
+    padding-top: 0;
+    margin-top: 10px;
+    /* background-color: aquamarine; */
+  
+  }
+
+  .all-workshops-1b h3{
+    padding-top: 0;
+
+  }
+
+
+  .all-workshops-1b h6{
+    color: rgb(245, 175, 189);
+    font-size: 14px;
+    padding: 0;
+
+  }
+
+  .all-workshops-1b p{
+    color: #000;
+    font-size: 14px;
+
+
+  }

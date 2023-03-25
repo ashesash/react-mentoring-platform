@@ -151,7 +151,7 @@ body {
 
 /* explore page */
 
-.projects-1{
+.workshops-1{
   margin-top: 50px;
   justify-content: center;
   align-items: center;
@@ -161,7 +161,7 @@ body {
 
 }
 
-.projects-1b{
+.workshops-1b{
   display: flex;
   justify-content: center;
   height: 550px;
@@ -169,7 +169,7 @@ body {
   border: 0;
 }
 
-.projects-2{
+.workshops-2{
   display: inline;
   align-items: center;
   justify-content: center;

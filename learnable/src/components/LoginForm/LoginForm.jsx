@@ -4,7 +4,7 @@ import "./LoginForm.css";
 
 function LoginForm() {
     const [ credentials, setCredentials ] = useState({
-        username: '',
+        email: '',
         password: '',
     }); 
     const navigate = useNavigate();
@@ -52,8 +52,8 @@ const postData = async () => {
                                 <h3>My Login Details</h3>
                             </div>
                             <div className="login-4a">
-                                <label htmlFor='username'>Username:</label>
-                                <input onChange={handleChange} type="text" id='username' placeholder='Enter username'></input>
+                                <label htmlFor='email'>Email:</label>
+                                <input onChange={handleChange} type="text" id='email' placeholder='Enter username'></input>
                             </div>
             
                             <div className="login-4a">

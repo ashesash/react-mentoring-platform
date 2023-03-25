@@ -6,6 +6,7 @@ import WorkshopDetail from './pages/WorkshopDetailPage';
 import NewWorkshopPage from "./pages/NewWorkshop";
 import NewUserPage from "./pages/NewUserPage";
 import LoginPage from "./pages/LoginPage";
+import Workshops from "./pages/WorkshopOverviewPage";
 
 
 const HeaderLayout = () => {
@@ -42,6 +43,11 @@ const router = createBrowserRouter([
         path: '/login',
         element: <LoginPage />
       },
+      // {
+      //   path: '/workshops',
+      //   element: <Workshops />
+      // },
+      
       
 
     ],

@@ -46,9 +46,7 @@ function NewWorkshopForm() {
         event.preventDefault();
 
             postData().then((response) => {
-            console.log(response)
             navigate(`/workshops/${response.id}`);
-            // back-tick is used when you need add with string with a value
             });
 
     };
@@ -61,8 +59,6 @@ const postData = async () => {
             "Content-Type": "application/json",
             "Authorization": `token ${token}`,
         },
-        body: JSON.stringify(FormData) 
-        // this is the line to pass in the state and then sent back to api
     });
     return response.json();
     };
