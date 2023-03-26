@@ -25,7 +25,7 @@ function WorkshopDetail(){
 
     return (
         <div>
-            <div className="project-block">
+            <div className="workshop-block">
             <div className="block1">
             <img src={ workshopPhoto } alt="workshop-graphic" />
             </div>

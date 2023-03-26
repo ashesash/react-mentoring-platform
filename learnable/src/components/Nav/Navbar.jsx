@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link, useNavigate } from 'react-router-dom';
 import "./Navbar.css";
 import navLogo from "../../assets/logo.png"
-// import ProjectCard from "../../components/ProjectCard";
+// import WorkshopCard from "../../components/WorkshopCard";
 
 function Nav() {
 
@@ -27,7 +27,7 @@ function Nav() {
     else {
         loginStuff = (<div>
         
-            <button className="btn-1"><Link to="/explore">See Wishin Wells</Link></button>
+            <button className="btn-1"><Link to="/Workshops">Workshops</Link></button>
             <button className="btn-2"><Link to="/workshop-form">Create a Workshop</Link></button>
             <button className="btn-7" onClick={onLogOut}> Logout</button>
         </div>)
