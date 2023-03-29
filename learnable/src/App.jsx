@@ -32,21 +32,21 @@ const router = createBrowserRouter([
         element: <NewWorkshopPage />
       },
       {
-        path: '/workshop',
+        path: '/workshopdetail',
         element: <WorkshopDetail />
       },
       {
-        path: '/createanaccount',
+        path: '/createaccount',
         element: <NewUserPage />
       },
       {
         path: '/login',
         element: <LoginPage />
       },
-      // {
-      //   path: '/workshops',
-      //   element: <Workshops />
-      // },
+      {
+        path: '/workshops',
+        element: <Workshops />
+      },
       
       
 

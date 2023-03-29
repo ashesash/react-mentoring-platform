@@ -7,19 +7,20 @@ function LoginForm() {
         email: '',
         password: '',
     }); 
-    const navigate = useNavigate();
-
-        
+    
     const handleChange = (event) => {
         const { id, value } = event.target;
         setCredentials((prevCredentials) => ({
             ...prevCredentials,
-            [id]: value,
+            [id]: value
         }));
     };
-   
+    
+    const navigate = useNavigate();
+
     const handleSubmit = (event) => {
         event.preventDefault();
+
         if (credentials.username && credentials.password) {
             postData().then((response) => {
             window.localStorage.setItem("token", response.token);
@@ -68,8 +69,7 @@ const postData = async () => {
                 </div>
             </div>
         </form>
-
-    )
+    );
 };
 
 export default LoginForm;
