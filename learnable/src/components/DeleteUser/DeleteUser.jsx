@@ -8,7 +8,7 @@ function DeleteUser({id}) {
     const handleDelete = (event) => {
         event.preventDefault();
 
-        deleteUser().then((response) => {
+        deleteUser().then(() => {
             window.localStorage.removeItem("token");
             navigate("/login");
         });
