@@ -21,7 +21,7 @@ function LoginForm() {
     const handleSubmit = (event) => {
         event.preventDefault();
 
-        if (credentials.username && credentials.password) {
+        if (credentials.email && credentials.password) {
             postData().then((response) => {
             window.localStorage.setItem("token", response.token);
             navigate("/explore");

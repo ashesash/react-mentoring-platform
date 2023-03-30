@@ -6,6 +6,7 @@ function NewUserForm() {
     const [ FormData, setFormData ] = useState({
         first_name: '',
         last_name: '', 
+        username: '',
         email: '',
         password: '',
         is_python_mentor: false,
@@ -77,6 +78,10 @@ const postData = async () => {
                             <div className="new-workshop-4a">
                                 <label htmlFor='last_name'>Last Name:</label>
                                 <input onChange={handleChange} type="text" id='last_name' placeholder='Enter last name'></input>
+                            </div>
+                            <div className="new-workshop-4a">
+                                <label htmlFor='username'>Username:</label>
+                                <input onChange={handleChange} type="text" id='username' placeholder='Pick a username'></input>
                             </div>
                              <div className="new-workshop-4a">
                                 <label htmlFor='Email'>Email:</label>
