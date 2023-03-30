@@ -30,7 +30,7 @@ const deleteUser = async () => {
         <div>
             <h3>Delete account</h3>
             <p>Are you sure you want to delete your account? This is irreversible.</p>
-            <button type="submit" onClick={handleDelete} className="btn-delete">Delete</button>
+            <button onClick={handleDelete} className="btn-delete">Delete</button>
         </div>
     );
 };
