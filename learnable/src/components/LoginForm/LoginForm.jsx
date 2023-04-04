@@ -20,11 +20,11 @@ function LoginForm() {
 
     const handleSubmit = (event) => {
         event.preventDefault();
-
-        if (credentials.email && credentials.password) {
+        console.log(credentials)
+        if (credentials.username && credentials.password) {
             postData().then((response) => {
             window.localStorage.setItem("token", response.token);
-            navigate("/explore");
+            navigate("/workshops");
             });
         }
     };
@@ -35,8 +35,9 @@ const postData = async () => {
         headers: {
             "Content-Type": "application/json",
         },
-        body: JSON.stringify(credentials)
+        body: JSON.stringify(credentials),
     });
+    console.log(JSON.stringify(credentials))
     return response.json();
 };
 
@@ -54,7 +55,7 @@ const postData = async () => {
                             </div>
                             <div className="login-4a">
                                 <label htmlFor='email'>Email:</label>
-                                <input onChange={handleChange} type="text" id='username' placeholder='Enter username'></input>
+                                <input onChange={handleChange} type="text" id='username' placeholder='Enter email'></input>
                             </div>
             
                             <div className="login-4a">
