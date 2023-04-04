@@ -27,7 +27,7 @@ function Nav() {
     else {
         loginStuff = (<div>
         
-            <button className="btn-1"><Link to="/Workshops">Workshops</Link></button>
+            <button className="btn-1"><Link to="/workshops">Workshops</Link></button>
             <button className="btn-2"><Link to="/workshop-form">Create a Workshop</Link></button>
             <button className="btn-7" onClick={onLogOut}> Logout</button>
         </div>)
