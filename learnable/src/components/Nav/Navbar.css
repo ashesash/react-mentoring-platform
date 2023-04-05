@@ -7,6 +7,7 @@
     height: 120px;
     background-color: #fff;
     display: flex;
+    flex-direction: row;
     align-items: center;
     padding-left: 90px;
     justify-content: space-between;
@@ -69,7 +70,7 @@
     justify-content: center;
     align-items: center;
     padding: 10px 5px;
-    background-color: #1e1243
+    background-color: #1e1243;
     border: none;
     border-radius: 25px;
     text-decoration: none;
