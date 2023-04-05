@@ -164,7 +164,7 @@ body {
 .workshops-1b{
   display: flex;
   justify-content: center;
-  height: 550px;
+  /* height: 550px; */
   margin: 0;
   border: 0;
 }
@@ -178,6 +178,4 @@ body {
   margin: 30px;
   padding: 20px;
   border-radius: 15px;
-  
-  
 }

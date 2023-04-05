@@ -20,7 +20,7 @@ useEffect(() => {
         <div className="workshops-1">
             <div className="workshops-1b">
                 <div className="workshops-2">
-                { workshopList.map((workshopData, key) => {
+                { workshopList.slice(-3).map((workshopData, key) => {
                 return <WorkshopCard key={key} workshopData={workshopData}/>
 
                 })}
