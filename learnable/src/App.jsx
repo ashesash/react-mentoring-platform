@@ -47,19 +47,13 @@ const router = createBrowserRouter([
         path: '/workshops',
         element: <Workshops />
       },
-      
-      
-
     ],
   },
 ]);
 
 function App() {
-
-
   return (
     <RouterProvider router={router}></RouterProvider>
-    
   )
 }
 
