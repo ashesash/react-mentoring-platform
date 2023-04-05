@@ -37,6 +37,7 @@ function NewUserForm() {
    
     const handleSubmit = (event) => {
         event.preventDefault();
+            console.log(FormData)
 
             postData().then((response) => {
             console.log(response)
@@ -56,6 +57,7 @@ const postData = async () => {
         body: JSON.stringify(FormData) 
 
     });
+    console.log(response)
     return response.json();
     };
 

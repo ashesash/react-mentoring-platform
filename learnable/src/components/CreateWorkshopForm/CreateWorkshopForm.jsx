@@ -22,7 +22,6 @@ function NewWorkshopForm() {
         
     const handleChange = (event) => {
         const { id, value, type, checked } = event.target;
-        console.log(id, value, type, checked);
         if (type=="checkbox"){
             setFormData((prevFormData) => ({
                 ...prevFormData,
@@ -44,7 +43,6 @@ function NewWorkshopForm() {
    
     const handleSubmit = (event) => {
         event.preventDefault();
-
             postData().then((response) => {
             navigate(`/workshops/${response.id}`);
             });
@@ -59,6 +57,7 @@ const postData = async () => {
             "Content-Type": "application/json",
             "Authorization": `token ${token}`,
         },
+        body: JSON.stringify(FormData)
     });
     return response.json();
     };
@@ -92,11 +91,11 @@ const postData = async () => {
 
                             <div className="new-workshop-4a">
                                 <label htmlFor='workshop_date'>Workshop Date: </label>
-                                <input onChange={handleChange} type="text" id='workshop_date' placeholder='Workshop Date'></input>
+                                <input onChange={handleChange} type="date" id='workshop_date' placeholder='Workshop Date'></input>
                             </div>
                             <div className="new-workshop-4a">
                                 <label htmlFor='description'>Description:</label>
-                                <input onChange={handleChange} type="text" id='description' placeholder='Enter description'></input>
+                                <textarea onChange={handleChange} type="text" id='description' placeholder='Enter description'></textarea>
                             </div>
                             <div className="new-workshop-4a">
                                 <label htmlFor='image'>Workshop Photo:</label>
