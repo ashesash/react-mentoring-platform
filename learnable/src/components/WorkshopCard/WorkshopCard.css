@@ -15,10 +15,10 @@
   .card {
     margin: 2rem 2rem 2rem 0;
     padding: 1.5rem;
-    width: 250px;
     box-shadow: 0 0 28px 4px rgba(0, 0, 0, 0.1);
-    transition: ransform .3s ease;
+    transition: transform .3s ease;
     cursor: pointer;
+    display: flex;
   }
 
   .card:hover {
@@ -32,20 +32,22 @@
 
   .card_body {
     margin: 1rem 0;
+    padding-left: 10px;
   }
 
   .card_body p {
     margin: 0;
+    padding-bottom: 6px;
   }
 
   .card_image {
     display: flex;
     justify-content: flex-end;
+    border-radius: 9%;
+    width: 200px;
+    height: 200px;
   }
 
-  .card_image img {
-    border-radius: 50%;
-  }
   /* .all-workshops-1a{
     display: flex;
     border-bottom: 2px solid #000000;

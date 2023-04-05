@@ -1,3 +1,4 @@
+// this currently doesn't do anything, until we have location added to the workshop data model
 const Location = ({location}) => {
     return(
         <div className="location">
