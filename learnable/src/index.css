@@ -164,7 +164,7 @@ body {
 .workshops-1b{
   display: flex;
   justify-content: center;
-  height: 550px;
+  /* height: 550px; */
   margin: 0;
   border: 0;
 }
