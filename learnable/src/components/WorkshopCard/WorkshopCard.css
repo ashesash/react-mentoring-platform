@@ -21,6 +21,13 @@
     display: flex;
   }
 
+  .detail {
+    margin: 2rem 2rem 2rem 0;
+    padding: 1.5rem;
+    box-shadow: 0 0 28px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+  }
+
   .card:hover {
     transform: scale(1.1);
   }
@@ -40,12 +47,34 @@
     padding-bottom: 6px;
   }
 
+  .detail_body {
+    margin: 1rem 0;
+    padding-left: 10px;
+  }
+
+  .detail_body p {
+    margin: 0;
+    padding-bottom: 16px;
+  }
+
+  .signup_button {
+    border-radius: 20px;
+    padding: 5px;
+    cursor: pointer;
+  }
+
   .card_image {
     display: flex;
     justify-content: flex-end;
     border-radius: 9%;
     width: 200px;
     height: 200px;
+  }
+
+  .detail_image {
+    border-radius: 9%;
+    width: 400px;
+    height: 400px;
   }
 
   /* .all-workshops-1a{

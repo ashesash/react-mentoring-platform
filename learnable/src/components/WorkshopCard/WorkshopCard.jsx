@@ -4,8 +4,7 @@ import "./WorkshopCard.css";
 // import Location from './Location';
 // import PhoneNumber from './PhoneNumber';
 
-function WorkshopCard({workshopData}) {
-    console.log(workshopData)
+function WorkshopCard({workshopData}){
     return (
         <div className="card">
             <Link to={`/workshops/${workshopData.id}`}>
@@ -13,9 +12,9 @@ function WorkshopCard({workshopData}) {
             </Link>
             <div className="card_body">
             <Link to={`/workshops/${workshopData.id}`}><h3 className="card_title">{workshopData.title}</h3></Link>
-                <p>{workshopData.description}</p>
-                <p>Positions remaining: {workshopData.max_mentor_num - workshopData.mentor_count}</p>
-                <p>Status: {workshopData.is_open ? 'open' : 'closed'}</p>
+                <p><i>{workshopData.description}</i></p>
+                <p><b>Positions remaining: </b>{workshopData.max_mentor_num - workshopData.mentor_count}</p>
+                <p><b>Status: </b>{workshopData.is_open ? 'open' : 'closed'}</p>
                 {/* Might be worth adding a location <Location location={workshopData.location}></Location> */}
                 {/* Same goes for contact number: <PhoneNUmber type="Mobile" number={workshopData.phone}></PhoneNUmber> */}
             </div>
