@@ -25,7 +25,7 @@ function LoginForm() {
             postData().then((response) => {
             window.localStorage.setItem("token", response.token);
             navigate("/workshops");
-            });
+            }).catch(() => {window.alert('Failed to log in')})
         }
     };
 
@@ -37,8 +37,10 @@ const postData = async () => {
         },
         body: JSON.stringify(credentials),
     });
-    console.log(JSON.stringify(credentials))
-    return response.json();
+    if(response.status === 200){
+        return response.json();
+    }
+    throw new Error();
 };
 
 
