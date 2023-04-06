@@ -15,8 +15,7 @@ function WorkshopCard({workshopData}){
                 <p><i>{workshopData.description}</i></p>
                 <p><b>Positions remaining: </b>{workshopData.max_mentor_num - workshopData.mentor_count}</p>
                 <p><b>Status: </b>{workshopData.is_open ? 'open' : 'closed'}</p>
-                {/* Might be worth adding a location <Location location={workshopData.location}></Location> */}
-                {/* Same goes for contact number: <PhoneNUmber type="Mobile" number={workshopData.phone}></PhoneNUmber> */}
+
             </div>
         </div>
     )

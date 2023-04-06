@@ -53,6 +53,11 @@ body {
 .workshop-block{
   display: flex;
   justify-content: center;
+  background-color: #b6a9d2;
+  margin-top: 50px;
+  height: 630px;
+  align-items: center;
+  
 }
 
 .block1{
@@ -60,11 +65,11 @@ body {
   display:flex;
   position: relative;
   justify-content: center;
-
+  /* border-radius: 15px; */
   width: 700px;
-  height: 500px;
-  padding: 20px;
-  margin-top: 40px;
+  height: 530px;
+  background-color: #ffffff;
+
 
 }
 
@@ -73,9 +78,7 @@ body {
   display: flex;
   position: relative;
   width: 100%;
-  height: 98%;
-  border-radius: 15px;
-  margin-top: 4px;
+  /* border-radius: 15px; */
 }
 
 
@@ -86,17 +89,16 @@ body {
   position: relative;
   justify-content: center;
   align-items: center;
-  text-align: center;
+  text-align: left;
   width: 480px;
-  height: 600px;
-  padding: 20px;
-  margin-top: 63px;
-  border-radius: 15px;
+  height: 530px;
+  padding: 60px;
+
+  /* border-radius: 15px; */
 }
 
-.block2 h3{
-  color: #1e1243;
-  margin: 10px;
+.block2 h2{
+  color: #ffffff !important;
 }
 
 .block2 h6{
@@ -109,7 +111,9 @@ body {
   font-size: 10px;
   margin-top: 5px;
   margin-bottom: 10px;
-  color: rgb(100, 99, 99);
+  color: #ffffff;
+  font-size: 16px;
+  margin-bottom: 30px;
 }
 
 /* .profilepic img{
@@ -178,4 +182,19 @@ body {
   margin: 30px;
   padding: 20px;
   border-radius: 15px;
+}
+
+.btn-8{
+  padding: 10px 10px;
+  background-color: #f5a6bd;
+  border: none;
+  border-radius: 25px;
+  color: #1e1243;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+  padding: 10px 20px;
+  font-weight: 900;
+  font-size: 16px;
+  margin-top: 20px;
 }
