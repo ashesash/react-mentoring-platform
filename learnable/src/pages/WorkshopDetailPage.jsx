@@ -56,7 +56,7 @@ function WorkshopDetail(){
                 
                 <div>
                     <h2>{workshopData.title}</h2>
-                    <p><i>{workshopData.description}</i></p>
+                    <p>{workshopData.description}</p>
                     <p><b>Date: </b>{new Date(workshopData.workshop_date).toString()}</p>
                     <p><b>Positions remaining: </b>{workshopData.max_mentor_num - workshopData.mentor_count}</p>
                     <p><b>Status: </b>{workshopData.is_open ? 'open' : 'closed'}</p>

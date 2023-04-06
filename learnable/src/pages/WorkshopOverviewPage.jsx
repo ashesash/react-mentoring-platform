@@ -19,7 +19,15 @@ useEffect(() => {
     return (
         <div className="workshops-1">
             <div className="workshops-1b">
+                <div className="workshop-1c">
+                    <h3>Latest Workshops</h3>
+                    <p>Come be a part of our skill sharing community. Sign up to be a mentor today!</p>
+                
+                
+                </div>
+            
                 <div className="workshops-2">
+                
                 { workshopList.slice(-3).map((workshopData, key) => {
                 return <WorkshopCard key={key} workshopData={workshopData}/>
 

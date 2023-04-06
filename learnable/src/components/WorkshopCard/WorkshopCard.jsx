@@ -7,6 +7,7 @@ import "./WorkshopCard.css";
 function WorkshopCard({workshopData}){
     return (
         <div className="card">
+            
             <Link to={`/workshops/${workshopData.id}`}>
                 <img className="card_image" src={workshopData.image}/>
             </Link>
