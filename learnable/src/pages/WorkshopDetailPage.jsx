@@ -58,6 +58,8 @@ function WorkshopDetail(){
                     <h2>{workshopData.title}</h2>
                     <p>{workshopData.description}</p>
                     <p><b>Date: </b>{new Date(workshopData.workshop_date).toString()}</p>
+                    <p><b>Number of mentors required: </b>{workshopData.max_mentor_num}</p>
+                    <p><b>How many mentors we currently have: </b>{workshopData.mentor_count}</p>
                     <p><b>Positions remaining: </b>{workshopData.max_mentor_num - workshopData.mentor_count}</p>
                     <p><b>Status: </b>{workshopData.is_open ? 'open' : 'closed'}</p>
                      <button type="submit" className="btn-8" onClick={handleSubmit}>Sign up as a mentor</button>
